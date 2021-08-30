@@ -16,6 +16,7 @@ class MenuTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      horizontalTitleGap: 0.0,
       leading: SvgPicture.asset(
         svgAsset,
         color: Colors.white54,
