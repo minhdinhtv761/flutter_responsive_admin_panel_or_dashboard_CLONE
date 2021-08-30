@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'components/drawer_menu.dart';
+
 class MainScreen extends StatefulWidget {
   const MainScreen({Key? key}) : super(key: key);
 
@@ -16,9 +18,7 @@ class _MainScreenState extends State<MainScreen> {
           children: <Widget>[
             Expanded(
               flex: 1,
-              child: Container(
-                color: Colors.black,
-              ),
+              child: DrawerMenu(),
             ),
             Expanded(
               flex: 5,
