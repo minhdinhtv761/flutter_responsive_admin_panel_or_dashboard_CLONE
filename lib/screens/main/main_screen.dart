@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../dashboard/dashboard_screen.dart';
 import 'components/drawer_menu.dart';
 
 class MainScreen extends StatefulWidget {
@@ -15,6 +16,7 @@ class _MainScreenState extends State<MainScreen> {
     return Scaffold(
       body: SafeArea(
         child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Expanded(
               flex: 1,
@@ -22,9 +24,7 @@ class _MainScreenState extends State<MainScreen> {
             ),
             Expanded(
               flex: 5,
-              child: Container(
-                color: Colors.blue,
-              ),
+              child: DashboardScreen(),
             ),
           ],
         ),

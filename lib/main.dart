@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: backgroundColor,
         canvasColor: secondaryColor,
-        textTheme: const TextTheme().apply(
+        textTheme: Theme.of(context).textTheme.apply(
           bodyColor: Colors.white,
         ),
       ),
