@@ -68,9 +68,7 @@ class DashboardHeader extends StatelessWidget {
                 padding: EdgeInsets.symmetric(
                   horizontal: defaultPadding * 0.5,
                 ),
-                child: Text(
-                  'Angelina Joli',
-                ),
+                child: Text('Angelina Joli'),
               ),
               Icon(Icons.keyboard_arrow_down),
             ],
