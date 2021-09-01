@@ -24,21 +24,21 @@ class MyFiles extends StatelessWidget {
             ElevatedButton.icon(
               onPressed: () {},
               style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.symmetric(
+                padding: const EdgeInsets.symmetric(
                   horizontal: defaultPadding,
                   vertical: defaultPadding,
                 ),
               ),
-              icon: Icon(Icons.add),
-              label: Text('Add new'),
+              icon: const Icon(Icons.add),
+              label: const Text('Add new'),
             ),
           ],
         ),
-        SizedBox(height: defaultPadding),
+        const SizedBox(height: defaultPadding),
         GridView.builder(
           shrinkWrap: true,
           itemCount: myFileInfoList.length,
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 4,
             mainAxisSpacing: defaultPadding,
             crossAxisSpacing: defaultPadding,
