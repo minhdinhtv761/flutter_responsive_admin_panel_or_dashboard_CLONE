@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class MyFilesInfoModel {
+class MyFileInfoModel {
   final String? svgAsset;
   final String? title;
   final int? fileCount;
@@ -8,7 +8,7 @@ class MyFilesInfoModel {
   final double? storage;
   final Color? color;
 
-  const MyFilesInfoModel(
+  const MyFileInfoModel(
     this.svgAsset,
     this.title,
     this.fileCount,
@@ -18,16 +18,16 @@ class MyFilesInfoModel {
   );
 }
 
-const List<MyFilesInfoModel> myFileList = <MyFilesInfoModel>[
-  MyFilesInfoModel(
-    'assets/icons/documents',
+const List<MyFileInfoModel> myFileInfoList = <MyFileInfoModel>[
+  MyFileInfoModel(
+    'assets/icons/documents.svg',
     'Documents',
     1328,
     35.0,
     1.9,
     Color(0xFF2697FF),
   ),
-  MyFilesInfoModel(
+  MyFileInfoModel(
     'assets/icons/google_drive.svg',
     'Google Drive',
     1328,
@@ -35,7 +35,7 @@ const List<MyFilesInfoModel> myFileList = <MyFilesInfoModel>[
     2.9,
     Color(0xFFFFA113),
   ),
-  MyFilesInfoModel(
+  MyFileInfoModel(
     'assets/icons/one_drive.svg',
     'One Drive',
     1328,
@@ -43,12 +43,12 @@ const List<MyFilesInfoModel> myFileList = <MyFilesInfoModel>[
     1.0,
     Color(0xFFA4CDFF),
   ),
-  MyFilesInfoModel(
+  MyFileInfoModel(
     'assets/icons/drop_box.svg',
     'Drop Box',
     5328,
     80.0,
     7.3,
-    Color(0xFFA4CDFF),
+    Color(0xFF007EE5),
   ),
 ];
