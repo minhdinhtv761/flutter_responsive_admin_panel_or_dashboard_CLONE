@@ -16,7 +16,7 @@ class DashboardHeader extends StatelessWidget {
           'Dashboard',
           style: Theme.of(context).textTheme.headline6,
         ),
-        Spacer(),
+        const Spacer(),
         Expanded(
           child: TextField(
             decoration: InputDecoration(
@@ -36,7 +36,7 @@ class DashboardHeader extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10.0),
                     onTap: () {},
                     child: Padding(
-                      padding: EdgeInsets.all(defaultPadding * 0.75),
+                      padding: const EdgeInsets.all(defaultPadding * 0.75),
                       child: SvgPicture.asset(
                         'assets/icons/search.svg',
                         color: Colors.white,
@@ -48,9 +48,9 @@ class DashboardHeader extends StatelessWidget {
             ),
           ),
         ),
-        SizedBox(width: defaultPadding),
+        const SizedBox(width: defaultPadding),
         Container(
-          padding: EdgeInsets.symmetric(
+          padding: const EdgeInsets.symmetric(
             horizontal: defaultPadding,
             vertical: defaultPadding * 0.5,
           ),
@@ -64,13 +64,13 @@ class DashboardHeader extends StatelessWidget {
                 'assets/images/profile_pic.png',
                 height: 38,
               ),
-              Padding(
+              const Padding(
                 padding: EdgeInsets.symmetric(
                   horizontal: defaultPadding * 0.5,
                 ),
                 child: Text('Angelina Joli'),
               ),
-              Icon(Icons.keyboard_arrow_down),
+              const Icon(Icons.keyboard_arrow_down),
             ],
           ),
         )
