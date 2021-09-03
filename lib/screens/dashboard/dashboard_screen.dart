@@ -37,8 +37,21 @@ class DashboardScreen extends StatelessWidget {
                 Expanded(
                   flex: 2,
                   child: Container(
-                    color: Colors.red,
-                    height: 500.0,
+                    padding: const EdgeInsets.all(defaultPadding),
+                    decoration: BoxDecoration(
+                      color: secondaryColor,
+                      borderRadius: BorderRadius.circular(10.0),
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Text(
+                          'Storage Details',
+                          style: Theme.of(context).textTheme.subtitle1,
+                        ),
+                        SizedBox(height:defaultPadding),
+                      ],
+                    ),
                   ),
                 ),
               ],
