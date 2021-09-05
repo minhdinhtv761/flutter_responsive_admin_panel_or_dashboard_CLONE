@@ -5,6 +5,7 @@ import '../../constants.dart';
 import 'components/dashboard_header.dart';
 import 'components/my_files.dart';
 import 'components/recent_files.dart';
+import 'components/storage_details.dart';
 
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({
@@ -34,25 +35,9 @@ class DashboardScreen extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(width: defaultPadding),
-                Expanded(
+                const Expanded(
                   flex: 2,
-                  child: Container(
-                    padding: const EdgeInsets.all(defaultPadding),
-                    decoration: BoxDecoration(
-                      color: secondaryColor,
-                      borderRadius: BorderRadius.circular(10.0),
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Text(
-                          'Storage Details',
-                          style: Theme.of(context).textTheme.subtitle1,
-                        ),
-                        SizedBox(height:defaultPadding),
-                      ],
-                    ),
-                  ),
+                  child: StorageDetails(),
                 ),
               ],
             ),
