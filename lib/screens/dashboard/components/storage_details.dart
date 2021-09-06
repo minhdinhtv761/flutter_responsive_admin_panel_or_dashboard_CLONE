@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_responsive_admin_panel_or_dashboard/models/storage_detail_model.dart';
 
 import '../../../constants.dart';
+import 'storage_details_card.dart';
 import 'storage_details_chart.dart';
 
 class StorageDetails extends StatelessWidget {
@@ -29,6 +31,12 @@ class StorageDetails extends StatelessWidget {
               vertical: defaultPadding,
             ),
             child: Chart(),
+          ),
+          Column(
+            children: List.generate(
+              storageDetailList.length,
+              (index) => StorageDetailsCard(info: storageDetailList[index]),
+            ),
           ),
         ],
       ),
